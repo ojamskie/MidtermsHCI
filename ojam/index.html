@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta charset="utf-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Login and Resgistration Form Design</title>
+        <link rel="stylesheet" type="text/css" href="../ojam/bootstrap/css/bootstrap.min.css">
+         <link rel="stylesheet" type="text/css" href="../ojam/bootstrap/css/bootstrap-new.css">
+          <link rel="stylesheet" type="text/css" href="../ojam/bootstrap/style.css">
+        <link rel="stylesheet" type="text/css" href="../ojam/ojam.css">
+       <!--  <link rel="stylesheet" href="script.js"> -->
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sx-12">
+                     <div class="responsive">
+                    <div class="header header-responsive col-xs-12 col-lg-12 col-md-12 w-100">
+                        <h1 class="h2 text-wrap">login/Registration system</h1>
+</div>
+ <div class="content content-col-xs-12 col-lg-12 col-md-12 w-100">
+        <div class="form">
+            <!-- <div class="register register-col-lg-12 col-md-12 col-sx-12"> -->
+    
+        <form class="register-form resgister-form-col-xs-12 col-lg-12 col-md-12 w-100" id="register-form">
+        <input type="text" class="form-control  form-control-lg" placeholder="Name">
+        <input type="text" class="form-control  form-control-lg" placeholder="Password">
+        <input type="text" class="form-control  form-control-lg" placeholder="Email ID">
+        <button class="Message" >Create</button>
+     <!--    <p class="Message">Already Registered? <a href="#">Login</a></p> -->
+        </form>
+
+         
+        
+        <form class="Login-form loginform-col-xs-12 col-lg-12 col-md-12 w-100">
+        <input type="text" class="form-control  form-control-lg" placeholder="USERNAME">
+        <input type="password" class="form-control  form-control-lg"placeholder="PASSWORD">
+        
+        <p class="Message">Not Registered? <a href="#register-form">Register</a></p>
+        <button >login</button>
+        </form>
+
+    <!-- </div> -->
+</div>  
+
+        </div>
+        </div class="responsive">
+        </div>
+        </div>
+        </div>
+           <script src="../ojam/bootstrap/jquery/jquery-3.3.1.min.js"></script>
+    
+        <script>
+        $('.Message ').click(function(){
+        $('.register-form').animate({height: "toggle", opacity: "toggle"}, "slow");    
+        });
+        </script>
+    </body>
+    <footer>
+
+        <p>&copy; Copyright 2019</p>
+    </footer>
+</html>
